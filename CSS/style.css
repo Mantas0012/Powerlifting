@@ -1,0 +1,33 @@
+body {
+    margin: 0;
+
+}
+
+a {
+    color: #ff3333;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background-color: #1a1a1a;
+}
+
+nav a {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #424d4c;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+.menu {
+    background-image: ;
+}
