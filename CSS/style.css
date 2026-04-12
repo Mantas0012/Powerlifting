@@ -1,33 +1,323 @@
-body {
-    margin: 0;
-
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0b0b0b;
+    color:white;
 }
 
-a {
-    color: #ff3333;
-
+.virsus{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 50px;
+    background:#111;
+    border-bottom:3px solid #cc0000;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 15px 50px;
-    background-color: #1a1a1a;
+.pavadinimas{
+    font-size:28px;
+    font-weight:bold;
+    color:#ff2d2d;
 }
 
-nav a {
-    margin-left: 20px;
-    font-weight: bold;
+.navigacija a{
+    color:white;
+    text-decoration:none;
+    margin-left:25px;
+    font-weight:bold;
+    transition:0.3s;
 }
 
-footer {
-    background-color: #424d4c;
-    text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+.navigacija a:hover{
+    color:#ff2d2d;
 }
 
-.menu {
-    background-image: ;
+.pradine_dalis{
+    min-height:500px;
+    background:
+    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+    url("../img/fonas.jpg");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.pradine_tekstai{
+    max-width:800px;
+}
+
+.pradine_tekstai h1{
+    font-size:52px;
+    margin-bottom:15px;
+}
+
+.pradine_tekstai p{
+    font-size:20px;
+    color:#dddddd;
+    margin-bottom:25px;
+}
+
+.mygtukas{
+    display:inline-block;
+    padding:12px 28px;
+    background:#cc0000;
+    color:white;
+    text-decoration:none;
+    border:none;
+    border-radius:6px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.mygtukas:hover{
+    background:#a80000;
+}
+
+.turinio_dalis{
+    padding:60px 30px;
+    background:#111;
+}
+
+.sviesi{
+    background:#1a1a1a;
+}
+
+.akcentine{
+    background:#151515;
+}
+
+.turinio_dalis h2{
+    text-align:center;
+    margin-bottom:25px;
+    font-size:32px;
+    color:#ff2d2d;
+}
+
+.tekstas_per_viduri{
+    max-width:850px;
+    margin:0 auto;
+    text-align:center;
+    font-size:18px;
+    line-height:1.7;
+    color:#dddddd;
+}
+
+.korteliu_deze{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.kortele{
+    width:260px;
+    background:#1c1c1c;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 4px 12px rgba(0,0,0,0.35);
+    text-align:center;
+    transition:0.3s;
+}
+
+.kortele:hover{
+    transform:translateY(-8px);
+    box-shadow:0 6px 18px rgba(255,0,0,0.25);
+}
+
+.kortele img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.kortele h3{
+    margin:15px 0 8px 0;
+    color:white;
+}
+
+.kortele p{
+    padding:0 15px 20px 15px;
+    color:#cccccc;
+    line-height:1.6;
+}
+
+.puslapio_virsus{
+    text-align:center;
+    padding:45px 20px;
+    background:#111;
+    color:white;
+    border-bottom:2px solid #cc0000;
+}
+
+.puslapio_virsus h1{
+    margin:0;
+    font-size:40px;
+    color:#ff2d2d;
+}
+
+.atleto_blokas{
+    display:flex;
+    gap:25px;
+    background:#1b1b1b;
+    padding:20px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.35);
+    flex-wrap:wrap;
+}
+
+.atleto_blokas img{
+    width:260px;
+    height:260px;
+    object-fit:cover;
+    border-radius:8px;
+}
+
+.atleto_aprasymas{
+    flex:1;
+}
+
+.atleto_aprasymas h2{
+    margin-top:0;
+    margin-bottom:10px;
+    color:#ff2d2d;
+}
+
+.atleto_aprasymas p{
+    line-height:1.7;
+    color:#dddddd;
+}
+
+.atleto_aprasymas ol{
+    line-height:1.8;
+    color:#cccccc;
+}
+
+.paprastas_sarasas{
+    max-width:700px;
+    margin:0 auto;
+    font-size:18px;
+    line-height:2;
+    color:#dddddd;
+}
+
+.lentele{
+    width:90%;
+    max-width:1050px;
+    margin:0 auto;
+    border-collapse:collapse;
+    background:#1b1b1b;
+    box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
+
+.lentele th{
+    background:#cc0000;
+    color:white;
+    padding:15px;
+}
+
+.lentele td{
+    padding:15px;
+    text-align:center;
+    border-bottom:1px solid #2a2a2a;
+    color:#eeeeee;
+}
+
+.lentele tr:nth-child(even){
+    background:#161616;
+}
+
+.lentele tr:hover{
+    background:#242424;
+}
+
+.forma{
+    width:420px;
+    max-width:90%;
+    margin:40px auto;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    background:#1b1b1b;
+    padding:25px;
+    border-radius:10px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
+
+.forma label{
+    font-weight:bold;
+    color:white;
+}
+
+.forma input,
+.forma textarea{
+    padding:12px;
+    border:1px solid #333;
+    border-radius:6px;
+    font-size:15px;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#111;
+    color:white;
+}
+
+.forma textarea{
+    min-height:120px;
+    resize:vertical;
+}
+
+.apacia{
+    background:#111;
+    text-align:center;
+    padding:30px;
+    margin-top:40px;
+    color:white;
+    border-top:3px solid #cc0000;
+}
+
+@media (max-width:900px){
+    .virsus{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+        padding:20px;
+    }
+
+    .navigacija{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .navigacija a{
+        margin-left:0;
+    }
+
+    .pradine_tekstai h1{
+        font-size:34px;
+    }
+
+    .pradine_tekstai p{
+        font-size:18px;
+    }
+
+    .puslapio_virsus h1{
+        font-size:30px;
+    }
+
+    .atleto_blokas{
+        flex-direction:column;
+        text-align:center;
+    }
+
+    .atleto_blokas img{
+        width:100%;
+        max-width:320px;
+        height:300px;
+    }
 }
