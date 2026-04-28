@@ -5,84 +5,264 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rekordai</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <header class="virsus">
-    <div class="pavadinimas">Powerlifting informacija</div>
-    <nav class="navigacija">
-        <a href="index.html">Pradžia</a>
-        <a href="atletai.html">Atletai</a>
-        <a href="pratimai.html">Pratimai</a>
-        <a href="rekordai.html">Rekordai</a>
-        <a href="kontaktai.html">Kontaktai</a>
+    <div class="virsutine_juosta">
+        <img class="logo_ikona" src="/PICS/weightlifting.png" alt="">
+        <div class="logo_tekstas">
+            <h1>POWERLIFTING</h1>
+            <p>JĖGOS SPORTAS</p>
+        </div>
+    </div>
+
+    <nav class="meniu">
+        <a href="index.html">PRADŽIA</a>
+        <a href="pratimai.html">PRATIMAI</a>
+        <a href="atletai.html">ATLETAI</a>
+        <a href="rekordai.html" class="aktyvus">REKORDAI</a>
+        <a href="kontaktai.html">KONTAKTAI</a>
     </nav>
 </header>
 
-<section class="puslapio_virsus">
-    <h1>Sportininkų total lentelė</h1>
-</section>
+<section class="sekcija sviesi">
+    <div class="antraste">
+        <h2>POWERLIFTING REKORDAI</h2>
+        <div class="linija"></div>
+    </div>
 
-<section class="turinio_dalis">
-    <table class="lentele">
-        <tr>
-            <th>Vieta</th>
-            <th>Sportininkas</th>
-            <th>Kategorija</th>
-            <th>Squat</th>
-            <th>Bench</th>
-            <th>Deadlift</th>
-            <th>Total</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>Colton Engelbrecht</td>
-            <td>SHW</td>
-            <td>470 kg</td>
-            <td>260 kg</td>
-            <td>470 kg</td>
-            <td>1200 kg</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Yury Belkin</td>
-            <td>100 kg</td>
-            <td>415 kg</td>
-            <td>230 kg</td>
-            <td>400 kg</td>
-            <td>1045 kg</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Ilya Marichev</td>
-            <td>100 kg</td>
-            <td>410 kg</td>
-            <td>250 kg</td>
-            <td>340 kg</td>
-            <td>1000 kg</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Austin Perkins</td>
-            <td>74 kg</td>
-            <td>303 kg</td>
-            <td>200 kg</td>
-            <td>317.5 kg</td>
-            <td>820.5 kg</td>
-        </tr>
-    </table>
-</section>
+    <div class="lenteles_deze">
+        <table class="lentele">
+            <tr>
+                <th>Rangas</th>
+                <th>Atletas</th>
+                <th>Fed</th>
+                <th>Data</th>
+                <th>Vieta</th>
+                <th>Lytis</th>
+                <th>Amžius</th>
+                <th>Ekipiruotė</th>
+                <th>Kategorija</th>
+                <th>Svoris</th>
+                <th>Pritūpimai</th>
+                <th>Spaudimas</th>
+                <th>Atkėlimas</th>
+                <th>Suma</th>
+                <th>Dots</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Colton Engelbrecht</td>
+                <td>WPC-SA</td>
+                <td>2025-03-29</td>
+                <td>Pietų Afrika-KZN</td>
+                <td>V</td>
+                <td>24</td>
+                <td>Bintai</td>
+                <td>125</td>
+                <td>120,4</td>
+                <td class="pabraukta">470</td>
+                <td class="pabraukta">260</td>
+                <td class="pabraukta">470</td>
+                <td>1200</td>
+                <td>688,33</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Andrew House</td>
+                <td>USPC</td>
+                <td>2025-11-22</td>
+                <td>JAV-NC</td>
+                <td>V</td>
+                <td>28</td>
+                <td>Raw</td>
+                <td>140</td>
+                <td>132,8</td>
+                <td class="pabraukta">468</td>
+                <td class="pabraukta">257</td>
+                <td class="pabraukta">410</td>
+                <td>1135</td>
+                <td>631,51</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Zahir Khudayarov</td>
+                <td>FPO</td>
+                <td>2015-09-26</td>
+                <td>Suomija</td>
+                <td>V</td>
+                <td>32</td>
+                <td>Bintai</td>
+                <td>125</td>
+                <td>125</td>
+                <td class="pabraukta">472,5</td>
+                <td class="pabraukta">260</td>
+                <td class="pabraukta">380</td>
+                <td>1112,5</td>
+                <td>630,52</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Derek Thistlethwaite</td>
+                <td>WRPF</td>
+                <td>2024-06-08</td>
+                <td>JAV-TX</td>
+                <td>V</td>
+                <td>24</td>
+                <td>Raw</td>
+                <td>125</td>
+                <td>111,4</td>
+                <td class="pabraukta">400</td>
+                <td class="pabraukta">245</td>
+                <td class="pabraukta">415</td>
+                <td>1060</td>
+                <td>624,85</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Kyle Kirvay</td>
+                <td>ABS</td>
+                <td>2025-10-12</td>
+                <td>JAV-CA</td>
+                <td>V</td>
+                <td>29</td>
+                <td>Raw</td>
+                <td>125</td>
+                <td>136,6</td>
+                <td class="pabraukta">425</td>
+                <td class="pabraukta">290</td>
+                <td class="pabraukta">410</td>
+                <td>1125</td>
+                <td>620,84</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Dave Richardson</td>
+                <td>ABS</td>
+                <td>2024-08-17</td>
+                <td>Airija</td>
+                <td>V</td>
+                <td>32</td>
+                <td>Bintai</td>
+                <td>125</td>
+                <td>121,9</td>
+                <td class="pabraukta">405</td>
+                <td class="pabraukta">245</td>
+                <td class="pabraukta">435</td>
+                <td>1085</td>
+                <td>619,91</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>April Mathis</td>
+                <td>APF</td>
+                <td>2017-04-01</td>
+                <td>JAV-FL</td>
+                <td>M</td>
+                <td>29</td>
+                <td>Bintai</td>
+                <td>90+</td>
+                <td>125</td>
+                <td class="pabraukta">320</td>
+                <td class="pabraukta">200</td>
+                <td class="pabraukta">252,5</td>
+                <td>772,5</td>
+                <td>613,11</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Eric Lilliebridge</td>
+                <td>UPA</td>
+                <td>2016-07-16</td>
+                <td>JAV-IA</td>
+                <td>V</td>
+                <td>26</td>
+                <td>Bintai</td>
+                <td>140</td>
+                <td>139</td>
+                <td class="pabraukta">477,5</td>
+                <td class="pabraukta">250</td>
+                <td class="pabraukta">387,5</td>
+                <td>1115</td>
+                <td>612,28</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Danny Grigsby</td>
+                <td>PLU</td>
+                <td>2025-12-13</td>
+                <td>JAV-TX</td>
+                <td>V</td>
+                <td>31</td>
+                <td>Raw</td>
+                <td>125</td>
+                <td>119,4</td>
+                <td class="pabraukta">387,5</td>
+                <td class="pabraukta">215</td>
+                <td class="pabraukta">458</td>
+                <td>1060,5</td>
+                <td>610,07</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Dan Bell</td>
+                <td>WRPF</td>
+                <td>2021-02-20</td>
+                <td>JAV-FL</td>
+                <td>V</td>
+                <td>34</td>
+                <td>Bintai</td>
+                <td>140+</td>
+                <td>180</td>
+                <td class="pabraukta">500</td>
+                <td class="pabraukta">272,5</td>
+                <td class="pabraukta">410</td>
+                <td>1182,5</td>
+                <td>606,47</td>
+            </tr>
+        </table>
+    </div>
 
-<section class="turinio_dalis akcentine">
-    <h2>Kas yra total?</h2>
-    <p class="tekstas_per_viduri">
-        Total yra visų trijų pagrindinių pratimų suma. Kuo didesnė suma,
-        tuo aukštesnę vietą sportininkas užima lentelėje.
-    </p>
+    <div class="dviejus_blokai">
+        <div class="maza_deze">
+            <h3>KAS YRA TOTAL?</h3>
+            <p>
+                Total yra visų trijų pagrindinių powerlifting pratimų geriausių rezultatų
+                suma. Tai reiškia, kad sportininko pritūpimų, spaudimo nuo krūtinės ir
+                atkėlimo rezultatai sudedami į vieną bendrą skaičių. Kuo didesnis total,
+                tuo stipresnis laikomas bendras sportininko pasirodymas varžybose.
+            </p>
+        </div>
+
+        <div class="maza_deze">
+            <h3>KAS YRA DOTS?</h3>
+            <p>
+                DOTS yra taškų sistema, leidžianti palyginti skirtingų svorio kategorijų
+                sportininkus. Vien tik total ne visada parodo, kuris atletas pasirodė geriau,
+                nes sunkesni sportininkai dažniausiai pakelia didesnius svorius. DOTS atsižvelgia
+                ir į kūno svorį, todėl leidžia teisingiau palyginti rezultatus.
+            </p>
+        </div>
+
+        <div class="maza_deze">
+            <h3>KODĖL REKORDAI SVARBŪS?</h3>
+            <p>
+                Rekordai rodo, kokį lygį gali pasiekti geriausi pasaulio atletai. Jie įkvepia
+                kitus sportininkus, parodo sporto pažangą ir leidžia stebėti, kaip keičiasi
+                powerlifting pasiekimai bėgant metams.
+            </p>
+        </div>
+    </div>
 </section>
 
 <footer class="apacia">
     <p>Powerlifting informacinis puslapis</p>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+
 </footer>
 
 </body>

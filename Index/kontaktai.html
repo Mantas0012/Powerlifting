@@ -5,41 +5,95 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontaktai</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
 <header class="virsus">
-    <div class="pavadinimas">Powerlifting informacija</div>
-    <nav class="navigacija">
-        <a href="index.html">Pradžia</a>
-        <a href="atletai.html">Atletai</a>
-        <a href="pratimai.html">Pratimai</a>
-        <a href="rekordai.html">Rekordai</a>
-        <a href="kontaktai.html">Kontaktai</a>
+    <div class="virsutine_juosta">
+        <img class="logo_ikona" src="/PICS/weightlifting.png" alt="">
+        <div class="logo_tekstas">
+            <h1>POWERLIFTING</h1>
+            <p>JĖGOS SPORTAS</p>
+        </div>
+    </div>
+
+    <nav class="meniu">
+        <a href="index.html">PRADŽIA</a>
+        <a href="pratimai.html">PRATIMAI</a>
+        <a href="atletai.html">ATLETAI</a>
+        <a href="rekordai.html">REKORDAI</a>
+        <a href="kontaktai.html" class="aktyvus">KONTAKTAI</a>
     </nav>
 </header>
 
-<section class="puslapio_virsus">
-    <h1>Kontaktai</h1>
-</section>
+<section class="sekcija balta">
+    <div class="antraste">
+        <h2>KONTAKTAI</h2>
+        <div class="linija"></div>
+    </div>
 
-<section class="turinio_dalis">
-    <form class="forma">
-        <label for="vardas">Vardas</label>
-        <input type="text" id="vardas" placeholder="Įrašyk vardą">
+    <p class="tekstas_centras">
+        Norite pasidalinti nuomone apie šį puslapį, pasiūlyti naujų idėjų ar paklausti
+        ko nors apie powerlifting? Užpildykite formą ir mes su jumis susisieksime.
+    </p>
 
-        <label for="elpastas">El. paštas</label>
-        <input type="email" id="elpastas" placeholder="Įrašyk el. paštą">
+    <div class="kontaktu_blokas">
+        <div class="formos_deze">
+            <form class="forma">
+                <label for="vardas">Vardas</label>
+                <input type="text" id="vardas" placeholder="Jūsų vardas">
 
-        <label for="zinute">Žinutė</label>
-        <textarea id="zinute" placeholder="Parašyk žinutę"></textarea>
+                <label for="pastas">El. paštas</label>
+                <input type="email" id="pastas" placeholder="Jūsų el. paštas">
 
-        <button type="submit" class="mygtukas">Siųsti</button>
-    </form>
+                <label for="tema">Tema</label>
+                <select id="tema">
+                    <option>Bendras klausimas</option>
+                    <option>Apie pratimus</option>
+                    <option>Apie atletus</option>
+                    <option>Apie rekordus</option>
+                </select>
+
+                <label for="zinute">Žinutė</label>
+                <textarea id="zinute" placeholder="Parašykite savo žinutę"></textarea>
+
+                <button type="submit" class="mygtukas">SIŲSTI ŽINUTĘ</button>
+            </form>
+        </div>
+
+        <div class="info_deze">
+            <div class="info_langelis">
+                <h3>El. paštas</h3>
+                <p>info@powerlifting.lt</p>
+            </div>
+
+            <div class="info_langelis">
+                <h3>Vieta</h3>
+                <p>Lietuva, Vilnius</p>
+            </div>
+
+            <div class="info_langelis">
+                <h3>Sekite mus</h3>
+                <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="apatine_reklama">
+        <h3>Buk arti sporto kartu su mumis</h3>
+        <p>powerlifting.lt viskas apie sporta.</p>
+    </div>
 </section>
 
 <footer class="apacia">
     <p>Powerlifting informacinis puslapis</p>
+    <i class="fa-brands fa-youtube"></i>
+    <i class="fa-brands fa-instagram"></i>
+    <i class="fa-brands fa-facebook"></i>
+
 </footer>
 
 </body>

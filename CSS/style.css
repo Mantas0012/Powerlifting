@@ -1,323 +1,397 @@
 body{
     margin:0;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#0b0b0b;
-    color:white;
+    font-family:Arial, sans-serif;
+    background:#f3f4f6;
+    color:#111827;
 }
 
 .virsus{
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-    padding:20px 50px;
-    background:#111;
-    border-bottom:3px solid #cc0000;
-}
-
-.pavadinimas{
-    font-size:28px;
-    font-weight:bold;
-    color:#ff2d2d;
-}
-
-.navigacija a{
+    background:#0b2c66;
     color:white;
-    text-decoration:none;
-    margin-left:25px;
+}
+
+.virsutine_juosta{
+    background:white;
+    padding:18px 30px;
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.logo_ikona{
+    color:#d62828;
+    width: 50px;
+    height: 50px;
+}
+
+.logo_tekstas h1{
+    margin:0;
+    font-size:28px;
+    color:#0b2c66;
+}
+
+.logo_tekstas p{
+    margin:0;
+    color:#d62828;
+    font-size:13px;
     font-weight:bold;
-    transition:0.3s;
 }
 
-.navigacija a:hover{
-    color:#ff2d2d;
-}
-
-.pradine_dalis{
-    min-height:500px;
-    background:
-    linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
-    url("../img/fonas.jpg");
-    background-size:cover;
-    background-position:center;
+.meniu{
     display:flex;
     justify-content:center;
+    flex-wrap:wrap;
+    background:#0b2c66;
+}
+
+.meniu a{
+    color:white;
+    text-decoration:none;
+    padding:18px 28px;
+    font-weight:bold;
+}
+
+.meniu a:hover{
+    background:#d62828;
+}
+
+.aktyvus{
+    background:#d62828;
+}
+
+.pradzios_blokas{
+    display:flex;
     align-items:center;
-    text-align:center;
-    padding:0 20px;
+    justify-content:space-between;
+    gap:40px;
+    padding:50px;
 }
 
-.pradine_tekstai{
-    max-width:800px;
+.pradzios_tekstas{
+    max-width:560px;
 }
 
-.pradine_tekstai h1{
-    font-size:52px;
-    margin-bottom:15px;
+.pradzios_tekstas h2{
+    font-size:60px;
+    margin:0 0 15px 0;
 }
 
-.pradine_tekstai p{
+.raudona{
+    color:#d62828;
+}
+
+.pradzios_tekstas p{
     font-size:20px;
-    color:#dddddd;
-    margin-bottom:25px;
+    line-height:1.7;
+}
+
+.pradzios_nuotrauka{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.pradzios_nuotrauka img{
+    width:100%;
+    max-width:700px;
+    height:420px;
+    object-fit:cover;
+    object-position:center;
 }
 
 .mygtukas{
     display:inline-block;
-    padding:12px 28px;
-    background:#cc0000;
+    background:#d62828;
     color:white;
+    padding:14px 28px;
     text-decoration:none;
+    margin-top:15px;
     border:none;
-    border-radius:6px;
-    font-size:16px;
     cursor:pointer;
-    transition:0.3s;
 }
 
 .mygtukas:hover{
-    background:#a80000;
+    background:#b71c1c;
 }
 
-.turinio_dalis{
-    padding:60px 30px;
-    background:#111;
+.sekcija{
+    padding:50px 30px;
+    background:white;
 }
 
-.sviesi{
-    background:#1a1a1a;
+.sekcija_pilka{
+    background:#eef2f7;
 }
 
-.akcentine{
-    background:#151515;
+.antraste{
+    max-width:1200px;
+    margin:0 auto 25px auto;
 }
 
-.turinio_dalis h2{
-    text-align:center;
-    margin-bottom:25px;
-    font-size:32px;
-    color:#ff2d2d;
+.antraste h2{
+    font-size:36px;
+    margin:0;
 }
 
-.tekstas_per_viduri{
-    max-width:850px;
+.linija{
+    width:100px;
+    height:4px;
+    background:#d62828;
+    margin-top:10px;
+}
+
+.tekstas_centras{
+    max-width:900px;
     margin:0 auto;
     text-align:center;
-    font-size:18px;
-    line-height:1.7;
-    color:#dddddd;
+    line-height:1.8;
+    color:#374151;
 }
 
-.korteliu_deze{
+.korteles{
+    max-width:1200px;
+    margin:30px auto 0 auto;
     display:flex;
-    justify-content:center;
-    gap:30px;
+    gap:25px;
     flex-wrap:wrap;
+    justify-content:center;
 }
 
 .kortele{
-    width:260px;
-    background:#1c1c1c;
-    border-radius:10px;
+    width:320px;
+    background:white;
+    border:1px solid #ddd;
     overflow:hidden;
-    box-shadow:0 4px 12px rgba(0,0,0,0.35);
-    text-align:center;
-    transition:0.3s;
 }
 
 .kortele:hover{
-    transform:translateY(-8px);
-    box-shadow:0 6px 18px rgba(255,0,0,0.25);
+    transform:translateY(-6px);
 }
 
 .kortele img{
     width:100%;
     height:220px;
     object-fit:cover;
+    object-position:center;
+    display:block;
 }
 
-.kortele h3{
-    margin:15px 0 8px 0;
-    color:white;
+.korteles_vidus{
+    padding:15px;
 }
 
-.kortele p{
-    padding:0 15px 20px 15px;
-    color:#cccccc;
-    line-height:1.6;
+.korteles_vidus h3{
+    color:#d62828;
+    font-size:24px;
 }
 
-.puslapio_virsus{
-    text-align:center;
-    padding:45px 20px;
-    background:#111;
-    color:white;
-    border-bottom:2px solid #cc0000;
+.korteles_vidus p{
+    line-height:1.7;
+    color:#374151;
 }
 
-.puslapio_virsus h1{
-    margin:0;
-    font-size:40px;
-    color:#ff2d2d;
+.korteles_vidus a{
+    color:#d62828;
+    font-weight:bold;
+    text-decoration:none;
 }
 
-.atleto_blokas{
+.dviejus_blokai{
+    max-width:1200px;
+    margin:30px auto 0 auto;
     display:flex;
     gap:25px;
-    background:#1b1b1b;
-    padding:20px;
-    margin-bottom:25px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.35);
     flex-wrap:wrap;
 }
 
-.atleto_blokas img{
-    width:260px;
-    height:260px;
-    object-fit:cover;
-    border-radius:8px;
-}
-
-.atleto_aprasymas{
+.maza_deze{
     flex:1;
+    min-width:280px;
+    background:white;
+    border:1px solid #ddd;
+    padding:20px;
 }
 
-.atleto_aprasymas h2{
-    margin-top:0;
-    margin-bottom:10px;
-    color:#ff2d2d;
+.maza_deze h3{
+    color:#0b2c66;
 }
 
-.atleto_aprasymas p{
-    line-height:1.7;
-    color:#dddddd;
-}
-
-.atleto_aprasymas ol{
-    line-height:1.8;
-    color:#cccccc;
-}
-
-.paprastas_sarasas{
-    max-width:700px;
-    margin:0 auto;
-    font-size:18px;
+.sarasas{
     line-height:2;
-    color:#dddddd;
+    color:#374151;
+}
+
+.sportininku_tinklelis{
+    max-width:1200px;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.sportininko_kortele{
+    background:white;
+    border:1px solid #ddd;
+    overflow:hidden;
+}
+
+.sportininko_kortele img{
+    width:100%;
+    height:350px;
+    object-fit:cover;
+    object-position:center;
+    display:block;
+}
+
+.sportininko_tekstas{
+    padding:15px;
+}
+
+.sportininko_tekstas h3{
+    color:#d62828;
+    font-size:22px;
+    margin-top:0;
+}
+
+.sportininko_tekstas p{
+    line-height:1.7;
+    color:#374151;
+}
+
+.lenteles_deze{
+    max-width:1200px;
+    margin:0 auto;
+    overflow:auto;
+    background:white;
 }
 
 .lentele{
-    width:90%;
-    max-width:1050px;
-    margin:0 auto;
+    width:100%;
+    min-width:1100px;
     border-collapse:collapse;
-    background:#1b1b1b;
-    box-shadow:0 4px 12px rgba(0,0,0,0.35);
 }
 
 .lentele th{
-    background:#cc0000;
+    background:#0b2c66;
     color:white;
-    padding:15px;
+    padding:10px;
 }
 
 .lentele td{
-    padding:15px;
+    padding:10px;
     text-align:center;
-    border-bottom:1px solid #2a2a2a;
-    color:#eeeeee;
+    border-bottom:1px solid #ddd;
 }
 
 .lentele tr:nth-child(even){
-    background:#161616;
+    background:#f3f4f6;
 }
 
-.lentele tr:hover{
-    background:#242424;
+.pabraukta{
+    color:#d62828;
+    font-weight:bold;
 }
 
-.forma{
-    width:420px;
-    max-width:90%;
-    margin:40px auto;
+.kontaktu_blokas{
+    max-width:1200px;
+    margin:0 auto;
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.formos_deze{
+    flex:2;
+    min-width:320px;
+    background:white;
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.info_deze{
+    flex:1;
+    min-width:260px;
     display:flex;
     flex-direction:column;
     gap:15px;
-    background:#1b1b1b;
-    padding:25px;
-    border-radius:10px;
-    box-shadow:0 4px 12px rgba(0,0,0,0.35);
+}
+
+.info_langelis{
+    background:white;
+    border:1px solid #ddd;
+    padding:20px;
+}
+
+.info_langelis h3{
+    color:#0b2c66;
+    margin-top:0;
+}
+
+.forma{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
 }
 
 .forma label{
     font-weight:bold;
-    color:white;
 }
 
 .forma input,
-.forma textarea{
-    padding:12px;
-    border:1px solid #333;
-    border-radius:6px;
-    font-size:15px;
-    font-family:Arial, Helvetica, sans-serif;
-    background:#111;
-    color:white;
+.forma textarea,
+.forma select{
+    padding:10px;
+    border:1px solid #ccc;
+    font-family:Arial, sans-serif;
 }
 
 .forma textarea{
-    min-height:120px;
+    min-height:130px;
     resize:vertical;
 }
 
-.apacia{
-    background:#111;
-    text-align:center;
-    padding:30px;
-    margin-top:40px;
+.apatine_reklama{
+    max-width:1200px;
+    margin:30px auto 0 auto;
+    background:#0b2c66;
     color:white;
-    border-top:3px solid #cc0000;
+    text-align:center;
+    padding:35px 20px;
 }
 
-@media (max-width:900px){
-    .virsus{
-        flex-direction:column;
-        gap:15px;
-        text-align:center;
-        padding:20px;
-    }
+.apatine_reklama h3{
+    margin:0 0 8px 0;
+    font-size:28px;
+}
 
-    .navigacija{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        gap:10px;
-    }
+.apacia{
+    background:#0b2c66;
+    color:white;
+    text-align:center;
+    padding:24px;
+    margin-top:40px;
+}
 
-    .navigacija a{
-        margin-left:0;
-    }
+.img_pilnai{
+    object-fit:contain;
+    background:#111827;
+}
 
-    .pradine_tekstai h1{
-        font-size:34px;
-    }
-
-    .pradine_tekstai p{
-        font-size:18px;
-    }
-
-    .puslapio_virsus h1{
-        font-size:30px;
-    }
-
-    .atleto_blokas{
+@media(max-width:900px){
+    .pradzios_blokas{
         flex-direction:column;
         text-align:center;
     }
 
-    .atleto_blokas img{
-        width:100%;
-        max-width:320px;
-        height:300px;
+    .pradzios_tekstas h2{
+        font-size:40px;
     }
+
+    .sportininku_tinklelis{
+        grid-template-columns:1fr;
+    }
+}
+
+i {
+    font-size: 27px;
 }
